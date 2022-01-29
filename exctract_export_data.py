@@ -22,7 +22,7 @@ listing_data['token_name'] = listing_data['Winner'].apply(lambda x: re.split('[(
 listing_data=listing_data.reset_index(drop=True)
 
 ### set BD connection
-conn = psycopg2.connect("dbname='postgres' user='amedvedeva' host='135.181.61.116' password='JhnbgLrt@345nbvYukfbg^739cdsg'")
+conn = psycopg2.connect("dbname='postgres' user='' host='' password=''")
 data = None
 traders_data = None
 for index, token in enumerate(listing_data['token_name']):
